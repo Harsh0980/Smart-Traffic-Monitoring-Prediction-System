@@ -1,12 +1,12 @@
-# 🚦 Smart Traffic Monitoring & Prediction System
+#  Smart Traffic Monitoring & Prediction System
 
-> 🚀 Recently retrained (2026) using Kaggle GPU for improved detection accuracy
+>  Recently retrained (2026) using Kaggle GPU for improved detection accuracy
 
 An intelligent traffic monitoring system that uses deep learning and computer vision to detect vehicles and estimate real-time traffic density for adaptive signal control.
 
 ---
 
-## 📌 Problem Statement
+##  Problem Statement
 
 Urban traffic congestion leads to increased travel time, fuel consumption, and pollution. Traditional traffic signals operate on fixed timers and do not adapt to real-time traffic conditions.
 
@@ -14,7 +14,7 @@ This project aims to solve this problem by building a system that dynamically an
 
 ---
 
-## 🧠 Approach
+##  Approach
 
 The system follows a complete end-to-end pipeline:
 
@@ -28,7 +28,7 @@ YOLOv5 was chosen due to its real-time detection capability and high accuracy in
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * Python
 * YOLOv5
@@ -39,7 +39,7 @@ YOLOv5 was chosen due to its real-time detection capability and high accuracy in
 
 ---
 
-## 📊 Model Training
+##  Model Training
 
 The model was trained on a custom annotated dataset using Kaggle notebooks.
 
@@ -52,7 +52,7 @@ The training process generated optimized weights (`best.pt`) based on validation
 
 ---
 
-## 🖼️ Results
+##  Results
 
 ### Traffic Detection Outputs
 
@@ -63,18 +63,53 @@ The model successfully detects multiple vehicle types and provides reliable traf
 
 ---
 
-## ⚙️ How to Run
+##  How to Run
+
+##  How to Run
+
+Follow these steps to run the project locally:
+
+###  Clone the Repository
 
 ```bash
 git clone https://github.com/Harsh0980/Smart-Traffic-Monitoring-Prediction-System.git
+```
+
+---
+
+###  Navigate to Project Directory
+
+```bash
 cd Smart-Traffic-Monitoring-Prediction-System
+```
+
+---
+
+###  Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+---
+
+###  Run Vehicle Detection
+
+```bash
 python detect.py --weights best.pt --source sample.mp4
 ```
 
 ---
 
-## ⚠️ Model Weights
+###  Notes
+
+* Ensure `best.pt` is present in the project directory
+* Replace `sample.mp4` with your own image/video file if needed
+
+
+---
+
+##  Model Weights
 
 The trained model (`best.pt`) is not included due to size limitations.
 
@@ -82,7 +117,7 @@ The trained model (`best.pt`) is not included due to size limitations.
 
 ---
 
-## 📈 Future Improvements
+##  Future Improvements
 
 * Real-time signal control integration
 * Multi-camera traffic analysis
@@ -91,7 +126,7 @@ The trained model (`best.pt`) is not included due to size limitations.
 
 ---
 
-## 💡 Key Learnings
+##  Key Learnings
 
 * Practical implementation of object detection
 * Understanding of training pipelines in YOLOv5
@@ -100,13 +135,13 @@ The trained model (`best.pt`) is not included due to size limitations.
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - YOLOv5 by Ultralytics for real-time object detection  
 - Kaggle for cloud-based GPU training  
