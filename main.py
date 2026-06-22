@@ -27,7 +27,7 @@ def run(source):
     cap = cv2.VideoCapture(source)
 
     if not cap.isOpened():
-        print("❌ Cannot open video")
+        print("Cannot open video")
         return
 
     cv2.namedWindow("Smart Traffic System", cv2.WINDOW_NORMAL)
